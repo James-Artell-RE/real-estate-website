@@ -1,0 +1,502 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.links{
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3498db;
+    padding: 20px;
+   
+    
+    
+}
+
+p{
+    padding: 8px;
+}
+
+hr{
+    opacity: .5;
+    
+}
+
+
+
+/* big hero on index page */
+
+
+
+
+
+.video { 
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+  /* -webkit-transform: scaleX(2);  */
+  /* -moz-transform: scaleX(2); */
+  
+
+
+
+  .content {
+
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 60%;
+    padding: 10px;
+  }
+
+  .searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    
+  }
+
+  .searchanswers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+ 
+  
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+  }
+
+
+  
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myUL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding:10px;
+    margin: 5px;
+    
+  }
+  
+  #myUL li {
+    display: none
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    width: 200%;
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
+  /* listing slide show */
+  * {
+    box-sizing: border-box;
+   
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+   
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  .image-container{
+    position: relative;
+  color: white;
+  line-height: 1px;
+  }
+
+  p{
+    font-family: 'Verdana';
+
+font-size: x-large;
+color: white;
+
+padding: 10px;
+
+  }
+
+  .grid {
+    display: table; 
+
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "left-side right-side"; 
+  }
+  .left-side { grid-area: left-side;
+    width: 100%;
+    display: table-cell;
+    padding: 10px;
+
+}
+  .right-side { grid-area: right-side;
+margin-right: 60px;
+padding: 10px;
+display: table-cell;
+
+
+}
+
+  .contact-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 50px;
+  
+    
+    width: 80%;
+    
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    
+  }
+
+  /* contact form */
+  * {box-sizing: border-box;}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 200%;
+  padding: 20px;
+  margin: 15px;
+}
+
+.myphoto{
+   
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   border-radius: 10px 10px 0px 0px;
+   width: 90%;
+    
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+   line-height: 1px;
+
+}
+
+
+
+.mycontactinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    width: 30%;
+    padding: 35px;
+}
+
+.stupid{
+    color: white;
+}
+
+.lowertext{
+    color: darkgray;
+    padding: 10px;
+    margin: 10px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.info{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "left-info right-info"; 
+  }
+  .left-info { grid-area: left-info;
+    line-height: 1px;
+margin: 10px;
+padding: 10px;
+}
+  .right-info { grid-area: right-info; }
+
+  .d{
+    color: lightgray;
+  }
+
+  .guide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #04AA6D;
+    margin: 0px;
+  }
+
+  .scheduleappointment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:lightblue;
+    text-align: center;
+    padding: 20px;
+    height: 510px;
+
+  }
+
+  .searchtext{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+    color: black;
+  }
+
+  .grid {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+  }
+  .left-info { grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Middle-info { grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  .right- { grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    
+  
+  }
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+  
+
+}
+
+.contact{
+  
+  color: black;
+  font-size: 12pt;
+
+  
+}
+
+a:link{
+  text-decoration: none;
+  color: black;
+
+}
+
+img{
+  padding: 5px;
+  align-items: center;
+}
+
+.pop{
+  padding: 10px;
+  text-align: right;
+  margin: 20px;
+}
+
+.dog {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 500px;
+  
+}
+
+.sponge:after {
+  content: "";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  clear: both;
+  padding: 20px;
+}
